@@ -140,12 +140,12 @@ header nav ul li a:hover{
   display: inline-block;
 }
 
-/*.read_more_btn a:hover {
+.read_more_btn a:hover {
   display: inline-block;
   background-color: #0fa5a5;
   color: #FFF;
   border: 1px #FFF solid;
-}*/
+}
 
 /**projects**/
 .projects_section{
