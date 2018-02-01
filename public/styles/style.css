@@ -14,7 +14,7 @@ h2{
 p{
   font-family: 'Lato', sans-serif;
   font-size: 1.5em;
-  padding:1.5em 5em;
+  padding:0.5em 5em;
 }
 
 /**nav**/
@@ -60,12 +60,6 @@ ul{
 
 header nav ul li a:hover{
   border-bottom: 1px solid #000;
-}
-
-.sticky {
-  position: fixed;
-  height:50px;
-  transition: all 0.5s ease;
 }
 
 /**image slider**/
@@ -356,12 +350,13 @@ header nav ul li a:hover{
   max-width: 25px;
 }
 
-button{
+/**icon hover effects**/
+.icon_container button{
   width:1em;
   height:1em;
 }
 
-button:focus{
+.icon_container button:focus{
   outline:0;
 }
 
@@ -425,48 +420,6 @@ button:focus{
   background-repeat: no-repeat;
 }
 
-/**icon hover effects**/
-/*
-.icon_remove:hover:before{
-  content:url('../images/linkedin.png');
-  display: inline-block;
-  position: absolute;
-  right: 46%;
-  top: 31%;
-  transition: opacity 0.3s ease 0s;
-  z-index: 200;
-}
-
-.icon2_remove:hover:before{
-  content:url('../images/github-mascot-logo-variant.png');
-  display: inline-block;
-  position: absolute;
-  right: 46%;
-  top: 31%;
-  transition: opacity 0.3s ease 0s;
-  z-index: 200;
-}
-
-.icon3_remove:hover:before{
-  content:url('../images/linkedin.png');
-  display: inline-block;
-  position: absolute;
-  right: 46%;
-  top: 31%;
-  transition: opacity 0.3s ease 0s;
-  z-index: 200;
-}
-
-.icon4_remove:hover:before{
-  content:url('../images/icons8-medium-filled-50 teal.png');
-  display: inline-block;
-  position: absolute;
-  right: 46%;
-  top: 31%;
-  transition: opacity 0.3s ease 0s;
-  z-index: 200;
-}*/
-
 /**footer**/
 .footer{
   font-family: 'Lato', sans-serif;
@@ -491,8 +444,3 @@ button:focus{
 .web_credit{
   padding-right: 1em;
 }
-
-
-
-
-
