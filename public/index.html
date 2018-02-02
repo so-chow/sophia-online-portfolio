@@ -24,18 +24,24 @@
     <main>
       <!--picture slider-->
       <a name="home"></a>
-      <div id="slider-container">
-        <div class="slide"><img id="slide_1" src="images/cover0.jpg"/></div>
-        <div class="slide"><img id="slide_2" src="images/cover1.jpg"/></div>
-        <div class="slide"><img id="slide_3" src="images/cover2.jpg"/></div>
-        <div class="slide"><img id="slide_4" src="images/cover3.jpg"/></div>
+      <div class="slideshow">
+        <div id="slider_container">
+          <img class="slide" id="slide_1" src="images/cover0.jpg"/>
+          <img class="slide" id="slide_2" src="images/cover1.jpg"/>
+          <img class="slide" id="slide_3" src="images/cover2.jpg"/>
+          <img class="slide" id="slide_4" src="images/cover3.jpg"/>
+        </div>
+        <div class="slide_buttons">
+          <div class="left_arrow arrow" onclick="handleArrow(-1)">&#10094;</div>
+          <div class="circle_container">
+            <span class="circle" onclick="handleCircle(1)"></span>
+            <span class="circle" onclick="handleCircle(2)"></span>
+            <span class="circle" onclick="handleCircle(3)"></span>
+            <span class="circle" onclick="handleCircle(4)"></span>
+          </div>
+          <div class="right_arrow arrow" onclick="handleArrow(1)">&#10095;</div>
+        </div>
       </div>
-      <ol class="circle">
-        <li id="circle1"></li>
-        <li id="circle2"></li>
-        <li id="circle3"></li>
-        <li id="circle4"></li>
-      </ol>
       <!--about me-->
       <a name="about_me"></a>
       <section class="about_me">
@@ -87,62 +93,86 @@
         <h2>skills</h2>
         <div class="skills_container">
           <div class="skill skill1">
-            JS +ES6
-            <div class="arc">
-            </div>
-            <div class="arc2">
-            </div>
-            <div class="arc3">
-            </div>
+              JS +ES6
+              <div class="arc">
+              </div>
+              <div class="arc2">
+              </div>
+              <div class="arc3">
+              </div>
+              <div class="percentage-overlay">
+                <div class="pecentage">85%</div>
+              </div>
           </div>
           <div class="skill skill2">
+            CSS + Sass
             <div class="arc">
             </div>
             <div class="arc2">
             </div>
             <div class="arc3">
             </div>
-            CSS + Sass
+              <div class="percentage-overlay">
+                <div class="pecentage">90%</div>
+              </div>
           </div>
           <div class="skill skill3">
+            React.js
             <div class="arc">
             </div>
             <div class="arc2">
             </div>
-            React.js
+            <div class="percentage-overlay">
+              <div class="pecentage">75%</div>
+            </div>
           </div>
           <div class="skill skill4">
+            Python
             <div class="arc">
             </div>
             <div class="arc2">
             </div>
-            Python
+            <div class="percentage-overlay">
+              <div class="pecentage">65%</div>
+            </div>
           </div>
           <div class="skill skill5">
+            jQuery
             <div class="arc">
             </div>
             <div class="arc2">
             </div>
-            jQuery
+            <div class="percentage-overlay">
+              <div class="pecentage">75%</div>
+            </div>
           </div>
           <div class="skill skill6">
+            Git
             <div class="arc">
             </div>
             <div class="arc2">
             </div>
             <div class="arc3">
             </div>
-            Git
+            <div class="percentage-overlay">
+              <div class="pecentage">85%</div>
+            </div>
           </div>
           <div class="skill skill7">
+            SQL
             <div class="arc">
             </div>
-            SQL
+            <div class="percentage-overlay">
+              <div class="pecentage">45%</div>
+            </div>
           </div>
           <div class="skill skill8">
+            Ember
             <div class="arc">
             </div>
-            Ember
+            <div class="percentage-overlay">
+              <div class="pecentage">55%</div>
+            </div>
           </div>
         </div>
       </section>

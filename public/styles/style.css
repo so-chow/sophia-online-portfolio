@@ -63,30 +63,48 @@ header nav ul li a:hover{
 }
 
 /**image slider**/
-#slider-container{
+.slideshow{
   padding-top:80px;
 }
 
-.slide img{
-  width: 100%;
-  height: 100%;
-  border-radius: 6px;
-  border: 1px solid white
+#slider_container{
+  background-size:cover;
+  overflow:hidden;
+  text-align: center;
+  position:relative;
+  display:inline-block;
 }
 
-/**TODO CHANGE ME LATER WITH JAVASCRIPT**/
-#slide_2, #slide_3, #slide_4{
-  display:none;
+.slide {
+  top:0;
+  width:100%;
+  display:inline-block;
 }
 
-.circle{
+.slide img {
+  width:100%;
+  height:100%;
+  border-radius:6px;
+  border:1px solid white;
+}
+
+.slide_buttons{
   display:flex;
   flex-direction: row;
-  justify-content: center;
-  padding: 0;
+  justify-content: space-evenly;
 }
 
-.circle li{
+.arrow{
+  font-size:3em;
+}
+
+.circle_container{
+  margin:0 30px;
+  display:flex;
+  justify-content: center;
+}
+
+.circle {
   background: white;
   border: 1px solid black;
   border-radius: 50%;
@@ -95,6 +113,10 @@ header nav ul li a:hover{
   height: 15px;
   cursor: pointer;
   margin: .1em;
+}
+
+.active-white{
+  background:#fff0f1;
 }
 
 /**about me**/
@@ -107,6 +129,7 @@ header nav ul li a:hover{
 }
 
 .about_me_text{
+  position:absolute;
   display:flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -140,11 +163,15 @@ header nav ul li a:hover{
   display: inline-block;
 }
 
-.read_more_btn a:hover {
+.read_more_btn a:hover{
   display: inline-block;
   background-color: #0fa5a5;
   color: #FFF;
   border: 1px #FFF solid;
+}
+
+.read_more_btn a:focus{
+  outline:0;
 }
 
 /**projects**/
@@ -212,6 +239,35 @@ header nav ul li a:hover{
   margin:5em;
   width:2em;
   height:2em;
+}
+
+.percentage-overlay{
+  position:absolute;
+  border-radius:50%;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  height:100%;
+  width:100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(255,255,255, 1);
+}
+
+.skill:hover .percentage-overlay{
+  opacity:2;
+}
+
+.pecentage{
+  color:navy;
+  font-size:2em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align:center;
 }
 
 .arc{
