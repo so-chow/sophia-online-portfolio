@@ -119,6 +119,10 @@ header nav ul li a:hover{
   background:#fff0f1;
 }
 
+.arrow:hover{
+  color:#0fa5a5;
+}
+
 /**about me**/
 .about_me{
   background-color: #f0fffe;
@@ -140,7 +144,7 @@ header nav ul li a:hover{
   position: absolute;
   background-position: left;
   background-repeat: repeat;
-  left: 5%;
+  left: 1%;
   top: 20%;
 }
 
@@ -148,7 +152,7 @@ header nav ul li a:hover{
   position: absolute;
   background-position: right;
   background-repeat: repeat;
-  right: 5%;
+  right: 1%;
   bottom: 20%;
 }
 
@@ -195,6 +199,11 @@ header nav ul li a:hover{
   margin:1em;
   box-shadow: 6px 7px 3px 0 rgba(0, 0, 0, 0.2);
   transition: all 0.2s ease;
+}
+
+.projects a{
+  text-decoration: none;
+  color:#000;
 }
 
 .submit:active {
@@ -395,6 +404,7 @@ header nav ul li a:hover{
 
 .follow_me{
   justify-content: space-around;
+  padding-right: 7em;
 }
 
 .follow_me a{
@@ -499,4 +509,8 @@ header nav ul li a:hover{
 
 .web_credit{
   padding-right: 1em;
+}
+
+.icon_credit{
+    padding-top: .2em;
 }
