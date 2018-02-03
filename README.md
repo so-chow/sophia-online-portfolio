@@ -1,1 +1,3 @@
-# sophia-online-portfolio
+# Sophia's Online Portfolio
+
+
