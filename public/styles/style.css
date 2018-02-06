@@ -218,8 +218,22 @@ header nav ul li a:hover{
   font-size: 2em;
 }
 
+.project_img{
+  visibility: hidden;
+  height:inherit;
+  width:inherit;
+}
+
 .projects:hover{
   background-color: #A9A9A9;
+}
+
+.project1:hover .project_img{
+  visibility: visible;
+}
+
+.project1:hover .project_text{
+  display:none;
 }
 
 /**skils**/
