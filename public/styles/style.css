@@ -518,10 +518,12 @@ header nav ul li a:hover{
 }
 
 /* Portrait and Landscape */
-@media only screen
+@media
+  screen
   and (device-width: 360px)
   and (device-height: 640px)
-  and (-webkit-device-pixel-ratio: 4),
+  and (-webkit-device-pixel-ratio: 3)
+  and (orientation: portrait),
   only screen
   and (min-device-width: 375px)
   and (max-device-width: 667px)
@@ -578,53 +580,8 @@ header nav ul li a:hover{
     height: 4em;
   }
 }
-/* Portrait and Landscape */
-/*@media only screen
-  and (min-device-width: 768px)
-  and (max-device-width: 1024px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-      .nav-links a{
-    font-size:2em;
-  }
-  .home-logo{
-    font-size: 1.5em;
-    padding:1em;
-  }
-  .projects{
-    width:80em;
-  }
-  p{
-    font-size:2.5em;
-    padding:0 1.5em;
-  }
-  h2{
-    font-size:3.5em;
-    padding:.5em;
-  }
-  .about_me{
-    height:688px;
-  }
-  .about_me_text{
-    padding:.2em;
-  }
-  .projects h3, .contact_info h3{
-    font-size:3em;
-  }
-  .read_more_btn a, .my_info_btn a{
-    font-size: 2.5em;
-  }
-  .skill{
-    font-size:3em;
-    margin:3em;
-    width: 5em;
-    height: 5em;
-  }
-  .icon_container button {
-    width: 4em;
-    height: 4em;
-  }
-}
-*/
+
+
 /* Large devices (large desktops, 1200px and up) */
 /*@media (min-width: 1200px) {
  }*/
